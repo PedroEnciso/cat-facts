@@ -4,14 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cat Facts</title>
+    <link rel="stylesheet" href="tailwind.css">
 </head>
-<body>
-    <div>
-        <h1>Welcome to Cat Facts!</h1>
-        <h2>Press the button to get a cat fact!</h2>
-        <button id="request" onclick="getCatFact()">^._.^</button>
-        <p id="fact"></p>
-        <p id="length"></p>
+<body class="h-screen w-full bg-yellow-200">
+    <div class="mt-20 font-mono">
+        <h1 class="text-center text-xl">Welcome to Cat Facts</h1>
+        <h2 class="text-center text-md mt-8">Press the button to get a cat fact!</h2>
+        <div class="mx-auto w-min mt-12">
+            <button id="request" onclick="getCatFact()" class="bg-purple-400 px-4 py-4 rounded-full text-xl hover:bg-purple-300 focus:outline-none" style="transition: .4s">^._.^</button>
+        </div>
+        <div class="w-11/12 md:w-3/4 mx-auto mt-16">
+            <p id="fact" class="text-center "></p>
+            <p id="length" class="text-center mt-8"></p>
+        </div>
+        <div class="x-11/12 md:w-5/6 mx-auto flex justify-end absolute" style="top: 60%;">
+            <div><img src="img/cup_cat.png" alt="çat sitting in a cup" class="w-40 h-44"></div>
+        </div>
+
+
     </div>
     
     <script src="main.js"></script>
